@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>D3 Graphic</title>
+<!--	<link rel="stylesheet" type="text/css" href="lib/basicStyle.css">-->
+	<link rel="stylesheet" type="text/css" href="myApp.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBdbwImT8pV6RLddLbSaPjsBoK6F7HwSJA",
+        authDomain: "firstfirebase-abf8a.firebaseapp.com",
+        databaseURL: "https://firstfirebase-abf8a.firebaseio.com",
+        storageBucket: "firstfirebase-abf8a.appspot.com",
+        messagingSenderId: "7093375301"
+      };
+      firebase.initializeApp(config);
+    </script>    
+
+</head>
+
+<body>
+    <button class="pEma">pEma_3</button>
+    <button class="pEma">pEma_30</button>
+    <button class="pEma">pEma_90</button>
+    
+    <div id="SvgChart"></div>
+    
+</body>
+<script src="lib/d3.js"></script>
+<script src="myApp.js"></script>
+</html>
