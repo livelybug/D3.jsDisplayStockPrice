@@ -74,7 +74,7 @@ function render(data) {
            tooltip.html(d[yCol] + "<br>" + formatDate2(d[xCol])  )  //set the indication bar to the center of the xaxis tick
                .style("left",(d3.event.pageX + 8) + "px")
                .style("top", yScale(d[yCol]) + "px"); 
-           d3.select(this).style("opacity", 0.5).style("fill", "yellow"); 
+          d3.select(this).style("opacity", 0.3).style("fill", "black"); 
     })
     
     rect1.on("mouseout", function() { 
